@@ -39,4 +39,13 @@
 
 
 # attempt 3
+# https://docs.pytest.org/en/7.1.x/getting-started.html
+#cmd:  pytest
 
+import pytest
+from converter import convert
+
+def test_converter():
+  assert convert(3) == "III"
+  assert convert(49)  == "XLIX"
+  assert convert(116) == "CXVI"
