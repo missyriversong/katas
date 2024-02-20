@@ -102,6 +102,7 @@ def convert(num):
 
 # dictionary with array 
 
+
   s = []   # list
   for index in ['ones', 'tens', 'hundreds', 'thousands']:
     num, remainder = divmod(num, 10)    #num/10
